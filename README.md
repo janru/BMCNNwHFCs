@@ -1,5 +1,5 @@
 
-# A Branching and Merging Convolutional Network with Homogeneous Filter Capsules
+# A Branching and Merging Convolutional Network with Homogeneous Filter Capsules with EMNIST
 
 ![license Apache 2](https://img.shields.io/static/v1?label=license&message=Apache%202&color=blue "license Apache 2")
 ![version v1.0.1](https://img.shields.io/static/v1?label=version&message=v1.0.1&color=orange "version v1.0.1")
