@@ -19,22 +19,22 @@ import tensorflow as tf
 tf2 = tf.compat.v2
 
 MNIST_IMG_SIZE = 28
-MNIST_CLASSES = 10
-MNIST_TRAIN_IMAGE_COUNT = 60000
-MNIST_EVAL_IMAGE_COUNT = 10000
+MNIST_CLASSES = 62
+MNIST_TRAIN_IMAGE_COUNT = 697932
+MNIST_EVAL_IMAGE_COUNT = 116323
 PARALLEL_INPUT_CALLS = 16
 
 
 class InputPipeline(object):
     def __init__(self, data_base_dir):
         self._training_images_file = os.path.join(data_base_dir,
-                                        "train-images-idx3-ubyte")
+                                        "emnist-byclass-train-images-idx3-ubyte")
         self._training_labels_file = os.path.join(data_base_dir,
-                                        "train-labels-idx1-ubyte")
+                                        "emnist-byclass-train-labels-idx1-ubyte")
         self._validation_images_file = os.path.join(data_base_dir,
-                                        "t10k-images-idx3-ubyte")
+                                        "emnist-byclass-test-images-idx3-ubyte")
         self._validation_labels_file = os.path.join(data_base_dir,
-                                        "t10k-labels-idx1-ubyte")
+                                        "emnist-byclass-test-labels-idx1-ubyte")
 
     @staticmethod
     def get_class_count():
